@@ -24,6 +24,13 @@ N = 100
 # Reading an array
 
 pets = ["cat", "dog", "hamster", "fish"]
+
+# read the whole array
+print(pets)
+
+#output --> ["cat", "dog", "hamster", "fish"]
+
+# read a value at a specific index
 print(pets[2])
 
 # output --> hamster
