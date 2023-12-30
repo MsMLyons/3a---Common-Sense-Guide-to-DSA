@@ -1,0 +1,54 @@
+Arrays:
+- a list of data elements
+- array size is the number of elements the data structure holds
+- the index indicates the location of an element within the array
+- computer keeps track of the memory location of its first element
+- computer also keeps track of the size of the array
+
+Sets:
+- similar to arrays, but does not allow duplicate values
+- efficiency differs from arrays for insertion 
+- other operations have the same efficiency as arrays, as noted below
+
+Data structure operations (arrays and sets):
+- Read: find data at a specific memory location
+    - fast operation because a computer jumps easily to the given memory location
+    - takes one computational step
+- Search: find memory location of specific data
+    - slow operation because it's necessary to search each memory location for the given data
+    - the number of steps depends on the type of search algorithm employed (see types of search operations, below)
+- Insert:
+    - add data to a data structure
+    - in the case of an array:
+        - adding to the end is fairly easy and considered one step
+        - adding to the beginning or somewhere in the middle causes other elements to be shifted
+        - shifting elements adds additional steps to the operation
+        - insertion takes N + 1 steps to complete in the worst case scenario
+    - in the case of an array-based set:
+        - insertions in sets require a search to confirm a value doesn't already exist in the set
+        - insertion into the end of a set = N + 1
+        - worst case scenario is insertion at the beginning of a set
+            - 2N + 1
+- Delete:
+    - remove data from a data structure
+        - one step to find and delete the data
+        - additional steps to shift data so that there is no blank memory address in the middle of the data structure
+        - worst case scenario is N steps
+            - search N memory cells
+            - shift N elements
+            - insert new element
+Speed of operations:
+- Measured in number of computational steps taken to perform an operation
+- Time complexity (aka efficiency, performance, runtime)
+
+Types of search operations:
+1. Linear search 
+    - the computer must check each memory cell in order, one by one
+    - for N values, the computer takes a maximum of N steps
+
+Number of steps in an operation:
+- N = the number of elements in the data structure
+- Worst case scenarios:
+    - N steps = the same number of steps as the number of elements (linear search, deletion)
+    - N + 1 = for N elements, N steps + 1 step (insertion into an array)
+    - 2N + 1 (insertion into a set)
