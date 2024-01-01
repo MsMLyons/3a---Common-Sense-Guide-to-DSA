@@ -1,12 +1,19 @@
 Algorithm:
 - a set of instructions to complete a task
-- algorithms affect code efficiency
+- writing code = creating algorithms
+- multiple algorithms can accomplish the same task
+- analyze an algorithm by the number of steps it takes to complete a task
+   - Conclusion:
+        - algorithms affect code efficiency
+        - the selection of an algorithm for a given task is important
 
 Ordered array:
 - values kept in sequential, usually ascending order
+- insertion requires a search to compare, then shift, values
+- can use linear or binary search
 - value search worst case = N steps (linear search)
-- value search better aglorithm = binary search
-- insertion worst case = N + 2 steps (slower than unordered arrays)
+- insertion worst case = N + 2 steps (linear; slower than unordered arrays)
+- value search/insertion better aglorithm = binary search
 
 Which array type is better?
 - unordered vs ordered array
@@ -18,9 +25,11 @@ Types of search operations
 1. Linear search: 
     - the computer must check each memory cell in order, one by one
     - for N values, the computer takes a maximum of N steps
+    - each time the dataset grows, the search takes a proportionally increasing amount of steps
     - time complexity O(N)
-2. Binary Search Algorithm:
+2. Binary Search Algorithm:    
     - continuously split the ordered array in half during the search
     - eliminate the portion that does not contain the specified value being searched for
     - advantageous over linear search for large datasets
+    - for each time a dataset is doubled, the number of steps taken is increased by 1
     - time complexity O(log n)
