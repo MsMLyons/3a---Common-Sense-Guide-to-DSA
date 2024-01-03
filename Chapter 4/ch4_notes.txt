@@ -1,0 +1,27 @@
+Bubble Sort
+- basic sorting algorithm to sort unordered arrays into ascending order
+- uses a loop to pass through the array
+- compares two sequential values in an array to determine which is smaller
+- moves each smaller value to the left
+- must loop through array until all values have been swapped into the correct order
+- loop runs until no swaps are made during the pass through
+
+Bubble Sort Efficiency
+- Steps:
+    - comparisons
+        - for N elements, (N -1) + (N - 2) + (N - 3)... + 1 comparisons
+    - swaps
+        - as the number of elements increases, the number of swaps increases exponentially
+- Big O = O(N**2)
+
+Nested loops - Exponential operation
+- generally indicate O(N**2) efficiency (quadratic)
+- could be worse, depending on how many nested loops there are
+
+Big O Time Complexity, from most to least efficient
+- O(1) = one step, regardless of size of N/dataset (constant)
+- O(log N) = increase of one step each time N/dataset doubles
+    - alternative: the algorithm takes as many steps as it takes to halve the dataset until one element 
+    is found
+- O(N) = linear time; for N elements, N steps (1:1 proportion)
+- O(N**2) = quadratic time (see Bubble Sort & nested loops, above)

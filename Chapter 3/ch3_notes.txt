@@ -1,20 +1,17 @@
 Big O Notation
 - used to express the efficiency of an algorithm
 - essential question: if there are N data elements, how many steps will an algorithm take?
+- describes the upper bound of the growth rate of the function, or worst case scenario of the function
+- the "soul" of Big O: how will an algorithm's performance change as the data increases?
 
-Bubble Sort
-- basic sorting algorithm to sort unordered arrays into ascending order
-- uses a loop to pass through the array
-- compares two sequential values in an array to determine which is smaller
-- moves each smaller value to the left
-- must loop through array until all values have been swapped into the correct order
-- loop runs until no swaps are made during the pass through
 
-Bubble Sort Efficiency
-- Steps:
-    - comparisons
-        - for N elements, (N -1) + (N - 2) + (N - 3)... + 1 comparisons
-    - swaps
-        - as the number of elements increases, the number of swaps increases exponentially
-- Big O = O(N**2)
-- O(N**2) = quadratic time
+Big O Time Complexity, from most to least efficient
+- O(1) = one step, regardless of size of N/dataset (constant)
+- O(log N) = increase of one step each time N/dataset doubles
+    - alternative: the algorithm takes as many steps as it takes to halve the dataset until one element 
+    is found
+- O(N) = linear time; for N elements, N steps (1:1 proportion)
+
+Logarithms
+- the inverse of exponents
+- how many times does a number need to be divided by 2 to reach a result of 1?
