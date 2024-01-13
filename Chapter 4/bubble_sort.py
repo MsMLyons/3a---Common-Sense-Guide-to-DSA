@@ -1,3 +1,5 @@
+# Bubble Sort - time complexity O(N^2)
+
 def bubble_sort(list):
     # keep track of the unsorted rightmost index of the array
     unsorted_until_index = len(list) - 1

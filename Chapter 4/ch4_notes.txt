@@ -1,9 +1,14 @@
+Sorting algorithms
+- Purpose: to sort unsorted values in ascending order
+- Some are considered simple and are not necessarily efficient
+- Faster algorithms can be more complex to implement
+
 Bubble Sort
 - basic sorting algorithm to sort unordered arrays into ascending order
 - uses a loop to pass through the array
-- compares two sequential values in an array to determine which is smaller
-- moves each smaller value to the left
-- must loop through array until all values have been swapped into the correct order
+- comparison: compares two sequential values in an array to determine which is smaller
+- swap: moves each smaller value to the left
+- must loop through array until all values have been swapped ("bubbled") into the correct order
 - loop runs until no swaps are made during the pass through
 
 Bubble Sort Efficiency

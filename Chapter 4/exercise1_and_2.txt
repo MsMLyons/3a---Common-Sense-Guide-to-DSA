@@ -1,0 +1,17 @@
+Q1 - Replace the question marks in the following table to describe how many steps occur
+for a given number of data elements across various types of Big O.
+
+N elements          O(N)    O(logN)     O(N^2)
+100                 100        ?           ? 
+2000                 ?         ?           ?
+
+Answer:
+
+N elements          O(N)    O(logN)     O(N^2)
+100                 100      ~6-7       10,000 
+2000                2000     ~11        4,000,000
+
+Q2 - If we have an O(N^2) algorithm that processes an array and find that it takes 256 
+steps, what is the size of the array?
+
+Answer: the square root of 256, or 16 elements
