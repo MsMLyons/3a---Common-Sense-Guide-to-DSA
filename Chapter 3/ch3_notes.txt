@@ -4,9 +4,15 @@ Big O Notation
 - describes the upper bound of the growth rate of the function, or worst case scenario of the function
 - the "soul" of Big O: how will an algorithm's performance change as the data increases?
 
+Operations & Efficiency
+- Efficiency varies, depending on the operation performed, even sometimes when using the same algorithm
+or code structure
+    - Ex: reading from an array, regardless of size, takes one step
+    - Ex: efficiency in searching an array will depend on whether it's sorted or not
+
 
 Big O Time Complexity, from most to least efficient
-- O(1) = one step, regardless of size of N/dataset (constant)
+- O(1) = one step, regardless of size of N/dataset (constant time; fastest algorithm)
 - O(log N) = increase of one step each time N/dataset doubles
     - alternative: the algorithm takes as many steps as it takes to halve the dataset until one element 
     is found

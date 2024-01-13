@@ -2,7 +2,7 @@
 Use Big O Notation to describe the time complexity of the following function
 that sums up all the numbers from a given array.
 
-Answer:
+Answer: O(N) because it takes as many steps as there are values in the array
 */
 
 function arraySum(array) {

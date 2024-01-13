@@ -2,7 +2,7 @@
 Use Big O Notation to describe the time complexity of the following function that determines
 whether a given year is a leap year.
 
-Answer: 
+Answer: O(1) because it takes 2 steps, regardless of the year
 */
 
 function isLeapYear(year) {

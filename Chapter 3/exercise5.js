@@ -2,7 +2,7 @@
 Describe the time complexity in terms of Big O Notation for the following function,
 which calculates the median from an ordered array.
 
-Answer:
+Answer: O(1) because once the middle (median) value is determined, the operation is complete
 */
 
 function median(array) {
