@@ -1,0 +1,41 @@
+How to compare algorithms that seem to have the same efficiency
+
+Selection Sort
+- Steps:
+    - check array values from left to right to determine which value
+      is the least
+    - must keep track of the lowest value found as each new index value
+      is inspected
+    - when a lower value is found, that index value is stored in a variable
+    - as a new lower value is found, the previous index value is replaced
+      in the variable
+    - once the lowest value is found, it is placed at the first index 
+      position [0]
+        - each subsequent pass through starts with the next index position
+        - [1] for 2nd pass through, [2] for 3rd pass through, etc.
+        - the other values aren't shifted since the positions are swapped
+        - each pass through must search again for the lowest value to place
+          in these positions (2 operations)
+    - when no more swaps need to be made, the array is sorted
+- Efficiency:
+    - for N elements, (N - 1) + (N - 2) + (N - 3)... + 1 comparisons
+    - one swap per pass through
+    - O(N^2)
+
+Comparison of Selection and Bubble Sort
+- Selection sort takes about half the number of steps as Bubble sort
+- Selection sort could be described as O(N^2 / 2), but...
+
+Ignoring Constants
+- Big O Notation ignores constants
+- Ex: O(100N) = O(N)
+
+Big O Categories
+- General categories of algorithm speeds
+- Takes into consideration not only the number of steps an algorithm takes
+  to complete a task, as well as the long-term trajectory of the algorithm
+  as dataset size increases
+  - constant vs straight vs exponential
+- However, algorithms within the same category can vary in speed based on
+  steps per N elements
+
